@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container:first-child {
+  text-align: center;
+}
+.auth-form {
+  display: inline-block;
+  margin: auto;
+  padding: 2rem;
+  background-color: darkgray;
+  border-radius: 10px;
+  text-align: right;
+}
+input {
+  border: 0;
+  border-radius: 5px;
+  padding: 6px;
+}
+
+.btn {
+  padding: 10px;
+  margin: 30px 70px 10px;
+
+  color: darkgray;
+  background-color: gainsboro;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgb(146, 106, 199);
+  transition: 0.3s;
+  color: white;
+}
+input:last-child {
+  text-align: center;
+}
+
+/* modal */
+
+.main-modal {
+  display: none;
+  position: fixed;
+  justify-content: space-between;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: auto;
+  overflow: auto;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.inner-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+}
+.editing-inp {
+  margin: 10px 70px;
+}
+.phone-edit {
+  margin-top: 10px;
+  margin-right: 5px;
+}
+.name-edit {
+  margin-right: 5px;
+}
+.btn-closer {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+input {
+  margin-bottom: 10px;
+}
+.btn-closer:hover,
+.btn-closer:focus {
+  background-color: rgb(178, 55, 55);
+  color: aliceblue;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-save {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px 20px 70px;
+  width: 72%;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.btn-save:hover {
+  background-color: #3e8e41;
+}
+/* --------------------card ------------------- */
+.task-list {
+  width: 60%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #949494;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.task-list li button {
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.delete-btn {
+  background-color: #ba4e57;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  width: 100px;
+  margin-left: 260px;
+  margin-top: 0;
+  border-radius: 10px;
+  border: none;
+  height: 40px;
+  margin-bottom: 60px;
+}
+.edit-btn {
+  background-color: #7575b4;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  width: 100px;
+  margin-left: 20px;
+  border-radius: 10px;
+  border: none;
+  height: 40px;
+  margin-bottom: 60px;
+}
+
+.task-list li .name {
+  width: 20%;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.task-list li .email {
+  width: 25%;
+  font-size: 16px;
+  color: #888;
+}
+
+.task-list li .phone {
+  width: 20%;
+  font-size: 16px;
+  color: #888;
+}
+
+.task-list li .img {
+  width: 20%;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.task-list li .img-placeholder {
+  width: 20%;
+  height: 50px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #888;
+}
+
+.card-main {
+  display: flex;
+}
+
+.cards-info {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  margin-left: 20px;
+  margin-top: 100px;
+}

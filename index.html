@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="auth-form">
+          <div class="name">
+            <span>Name:</span>
+            <input type="text" class="name-input" placeholder="type name" />
+          </div>
+
+          <div class="Email">
+            <span>Email:</span>
+            <input type="text" class="email-input" placeholder="type email" />
+          </div>
+
+          <div class="Phone">
+            <span>Phone:</span>
+            <input
+              type="number"
+              class="phone-input"
+              placeholder="type number"
+            />
+          </div>
+
+          <div class="img">
+            <span>Image:</span>
+            <input
+              type="url"
+              class="img-input"
+              placeholder="enter URL of img"
+            />
+          </div>
+
+          <div class="name"><button class="btn">Add Contact</button></div>
+        </div>
+      </div>
+      <div class="container">
+        <ul class="task-list"></ul>
+      </div>
+    </div>
+
+    <div class="main-modal">
+      <div class="inner-modal">
+        <div class="close">
+          <button class="btn-closer">X</button>
+        </div>
+        <div class="editing-inp">
+          <input type="text" class="name-edit" />
+          <input type="text" class="email-edit" />
+          <input type="text" class="phone-edit" />
+          <input type="text" class="img-edit" />
+        </div>
+        <button class="btn-save">Save changes</button>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
