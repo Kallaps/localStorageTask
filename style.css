@@ -225,13 +225,9 @@ input {
 
 .card-main {
   display: flex;
-  margin-top: -80px;
+
 }
-img {
-  width: 200px;
-  height: 200px;
-  margin-top: 100px;
-}
+
 
 .cards-info {
   display: flex;
